@@ -3,8 +3,8 @@ Explore my learning path in web development with HTML, CSS, and JS. This reposit
 
 Welcome to the Web Development Practice Projects repository! This collection features hands-on projects created during my journey to mastering web development, guided by tutorials in HTML, CSS, and JavaScript.
 
-##Project List:
-Weather App: This code is a concise Weather App webpage, using HTML, CSS, and JavaScript. Users input a city name, and the app fetches real-time weather data, displaying temperature, city, humidity, and wind speed with corresponding weather icons.
+## Project List
+1)Weather App: This code is a concise Weather App webpage, using HTML, CSS, and JavaScript. Users input a city name, and the app fetches real-time weather data, displaying temperature, city, humidity, and wind speed with corresponding weather icons.
 ...
 
 Contribution Guidelines
