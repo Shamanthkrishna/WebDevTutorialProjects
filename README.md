@@ -7,9 +7,6 @@ Welcome to the Web Development Practice Projects repository! This collection fea
 Weather App: This code is a concise Weather App webpage, using HTML, CSS, and JavaScript. Users input a city name, and the app fetches real-time weather data, displaying temperature, city, humidity, and wind speed with corresponding weather icons.
 ...
 
-Contribution Guidelines
-If you'd like to contribute or have suggestions, feel free to open an issue or submit a pull request.
-
 ## Credits
 
 A big thank you to the following sources and tutorials that have been instrumental in my learning journey:
@@ -20,6 +17,9 @@ A big thank you to the following sources and tutorials that have been instrument
 - W3 Schools-Javascript(https://www.w3schools.com/js/default.asp): Basics of Javascript
 - ...
 
+
+### Contribution Guidelines
+If you'd like to contribute or have suggestions, feel free to open an issue or submit a pull request.
 Feel free to explore these tutorials to deepen your understanding and enhance your skills!
 
 
