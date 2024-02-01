@@ -1,0 +1,2 @@
+# Weather App
+This code snippet represents a simple Weather App webpage. It utilizes HTML, CSS, and JavaScript to create an interface where users can input a city name. The app fetches real-time weather data from the OpenWeatherMap API, displaying temperature, city name, humidity, and wind speed. The visual representation includes weather icons corresponding to different conditions, offering a user-friendly experience for checking current weather conditions.
