@@ -14,6 +14,8 @@ Welcome to the Web Development Practice Projects repository! This collection fea
    - This is a simple JavaScript-based password generator that creates a secure, random password containing uppercase letters, lowercase letters, numbers, and symbols.
 5. **Notes App**
    - This is a simple web-based note-taking application that allows users to create, edit, and delete notes. The notes are stored in the browser's localStorage, enabling them to persist even after the page is reloaded.
+6. **Age Calculator**
+   - This is a simple web-based application that calculates the age of a user based on their birth date. The user inputs their birth date, and the application displays their age in years, months, and days.
      
 ...
 
