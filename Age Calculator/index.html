@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Age Calculator</title>
+    <!-- Title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the external CSS file for styling the page -->
+</head>
+<body>
+    <!-- Main content of the page -->
+    <div class="container">
+        <!-- Container for the entire application, styled with a gradient background and padding -->
+        <div class="calculator">
+            <!-- Section for the calculator, centered and limited in width -->
+            <h1>Javascript <br><span>Age Calculator</span></h1>
+            <!-- Heading with a large font size, including a span for highlighting "Age Calculator" -->
+            <div class="input-box">
+                <!-- Container for the input field and button, styled with a semi-transparent background and rounded corners -->
+                <input type="date" id="date">
+                <!-- Date input field for selecting the birth date, with the maximum date set to today by JavaScript -->
+                <button onclick="calculateAge()">Calculate</button>
+                <!-- Button that triggers the `calculateAge()` function when clicked -->
+            </div>
+            <p id="result"></p>
+            <!-- Paragraph for displaying the result of the age calculation -->
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<!-- Link to the external JavaScript file containing the logic for the age calculator -->
+</html>

@@ -1,0 +1,92 @@
+/* Apply global styles to all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Poppins', sans-serif; /* Set the default font */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Container styles for the entire page */
+.container {
+    width: 100%; /* Full width */
+    min-height: 100vh; /* At least the height of the viewport */
+    background: linear-gradient(135deg, #4203a9, #90bafc); /* Gradient background */
+    color: white; /* White text color */
+    padding: 10px; /* Padding inside the container */
+}
+
+/* Styles for the calculator section */
+.calculator {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width of 600px */
+    margin-left: 10%; /* Margin to the left */
+    margin-top: 10%; /* Margin to the top */
+}
+
+/* Styles for the heading inside the calculator */
+.calculator h1 {
+    font-size: 60px; /* Large font size */
+}
+
+/* Styles for all <span> elements */
+span {
+    color: #ffff76; /* Yellow color for emphasis */
+}
+
+/* Styles for the input box container */
+.input-box {
+    margin: 40px 0; /* Margin above and below */
+    padding: 35px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255,255,255,0.3); /* Semi-transparent white background */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the input field inside the input box */
+.input-box input {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Margin to the right */
+    padding: 14px 20px; /* Padding inside the input field */
+    border: 0; /* No border */
+    outline: 0; /* No outline on focus */
+    font-size: 18px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    position: relative; /* Relative positioning */
+}
+
+/* Styles for the button inside the input box */
+.input-box button {
+    background: #ffff76; /* Yellow background */
+    border: 0; /* No border */
+    outline: 0; /* No outline on focus */
+    padding: 15px 30px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 500; /* Medium font weight */
+    color: #333; /* Dark text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Custom styles for the calendar picker indicator in the input field */
+.input-box input::-webkit-calendar-picker-indicator {
+    top: 0; /* Top position */
+    left: 0; /* Left position */
+    right: 0; /* Right position */
+    bottom: 0; /* Bottom position */
+    width: auto; /* Auto width */
+    height: auto; /* Auto height */
+    position: absolute; /* Absolute positioning */
+    background-position: calc(100% - 10px); /* Position the background image */
+    background-size: 30px; /* Size of the background image */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Styles for the result container */
+#result {
+    font-size: 20px; /* Font size */
+}
+
+/* Styles for span elements inside the result container */
+#result span {
+    color: #ffff76; /* Yellow color for emphasis */
+}
