@@ -12,6 +12,8 @@ Welcome to the Web Development Practice Projects repository! This collection fea
    - This is a simple web-based quiz application built with HTML, CSS, and JavaScript. The application presents a series of questions to the user, tracks their score, and displays the final score at the end of the quiz.
 4. **Password Generator**   
    - This is a simple JavaScript-based password generator that creates a secure, random password containing uppercase letters, lowercase letters, numbers, and symbols.
+5. **Notes App**
+   - This is a simple web-based note-taking application that allows users to create, edit, and delete notes. The notes are stored in the browser's localStorage, enabling them to persist even after the page is reloaded.
      
 ...
 
