@@ -24,6 +24,9 @@ Welcome to the Web Development Practice Projects repository! This collection fea
      
 7. **Quote Generator**
    - This web application displays a random quote from various categories and allows users to tweet the quote. It features a clean and centered design with interactive buttons to fetch new quotes and share them on Twitter.
+  
+8. **QR Code Generator**
+   - A simple web application that generates QR codes based on user input. Users can enter text or a URL to create a corresponding QR code, which is then displayed on the page.
      
 ...
 
