@@ -6,16 +6,24 @@ Welcome to the Web Development Practice Projects repository! This collection fea
 ## Project List
 1. **Weather App**
    - This code is a concise Weather App webpage, using HTML, CSS, and JavaScript. Users input a city name, and the app fetches real-time weather data, displaying temperature, city, humidity, and wind speed with corresponding weather icons.
+     
 2. **To-Do List**
    - This is a simple web-based to-do list application built with HTML, CSS, and JavaScript. It allows users to add, mark as completed, delete, and clear tasks. The tasks are saved in the browser's local storage, so they persist across page reloads.
+     
 3. **Quiz Application**
    - This is a simple web-based quiz application built with HTML, CSS, and JavaScript. The application presents a series of questions to the user, tracks their score, and displays the final score at the end of the quiz.
+     
 4. **Password Generator**   
    - This is a simple JavaScript-based password generator that creates a secure, random password containing uppercase letters, lowercase letters, numbers, and symbols.
+     
 5. **Notes App**
    - This is a simple web-based note-taking application that allows users to create, edit, and delete notes. The notes are stored in the browser's localStorage, enabling them to persist even after the page is reloaded.
+     
 6. **Age Calculator**
    - This is a simple web-based application that calculates the age of a user based on their birth date. The user inputs their birth date, and the application displays their age in years, months, and days.
+     
+7. **Quote Generator**
+   - This web application displays a random quote from various categories and allows users to tweet the quote. It features a clean and centered design with interactive buttons to fetch new quotes and share them on Twitter.
      
 ...
 
