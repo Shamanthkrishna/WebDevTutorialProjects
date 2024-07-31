@@ -1,0 +1,108 @@
+/* Apply global styles to all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Poppins', sans-serif; /* Set default font family */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style the body background */
+body {
+    background: #262a2f; /* Dark background color */
+}
+
+/* Style the container holding the QR code generator */
+.container {
+    width: 400px; /* Set fixed width */
+    padding: 25px 35px; /* Add padding inside the container */
+    position: absolute; /* Position absolutely to center */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+    background: white; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Style paragraph inside the container */
+.container p {
+    font-weight: 600; /* Bold text */
+    font-size: 15px; /* Font size */
+    margin-bottom: 8px; /* Space below the paragraph */
+}
+
+/* Style input fields inside the container */
+.container input {
+    width: 100%; /* Full width of the container */
+    height: 50px; /* Fixed height */
+    border: 1px solid #494eea; /* Border color */
+    outline: 0; /* Remove default outline */
+    padding: 10px; /* Add padding inside the input */
+    margin: 10px 0 20px; /* Margin for spacing */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style buttons inside the container */
+.container button {
+    width: 100%; /* Full width of the container */
+    height: 50px; /* Fixed height */
+    background: #494eea; /* Button background color */
+    color: white; /* Text color */
+    border: 0; /* Remove default border */
+    outline: 0; /* Remove default outline */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 20px 0; /* Margin for spacing */
+    font-weight: 500; /* Medium font weight */
+}
+
+/* Style for the image box */
+#imgBox {
+    width: 200px; /* Fixed width */
+    border-radius: 5px; /* Rounded corners */
+    max-height: 0; /* Start with hidden image */
+    overflow: hidden; /* Hide overflowing content */
+    transition: max-height 1s; /* Smooth transition for showing/hiding */
+}
+
+/* Style for the image inside the image box */
+#imgBox img {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside the image box */
+}
+
+/* Style for showing the image box */
+#imgBox.show-img {
+    max-height: 300px; /* Set height when visible */
+    margin: 10px auto; /* Center the image box */
+    border: 1px solid #d1d1d1; /* Border around the image box */
+}
+
+/* Style for the error state of the input field */
+.container input.border-red {
+    border: 2px solid #e62929; /* Red border color */
+}
+
+/* Animation for shaking the input field */
+.error {
+    animation: shake 0.03s linear 10; /* Shake animation with 0.03s duration and 10 iterations */
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    25% {
+        transform: translateX(-2px); /* Move left */
+    }
+    50% {
+        transform: translateX(0); /* Return to initial position */
+    }
+    75% {
+        transform: translateX(2px); /* Move right */
+    }
+    100% {
+        transform: translateX(0); /* Final position */
+    }
+}
