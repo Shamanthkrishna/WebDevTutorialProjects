@@ -1,0 +1,102 @@
+/* Importing the Playfair Display font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Apply global styles to all elements */
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    font-family: "Playfair Display", serif; /* Set the default font to Playfair Display */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    background: #bbc6fa; /* Set a light blue background color for the whole page */
+}
+
+.quote-box {
+    background: white; /* White background for the quote box */
+    width: 700px; /* Set the width of the quote box */
+    position: absolute; /* Position the quote box absolutely */
+    top: 50%; /* Vertically center the quote box */
+    left: 50%; /* Horizontally center the quote box */
+    transform: translate(-50%, -50%); /* Center the quote box by translating it */
+    padding: 40px; /* Add padding inside the quote box */
+    border-radius: 10px; /* Rounded corners for the quote box */
+    text-align: center; /* Center-align text inside the quote box */
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15); /* Add a subtle shadow around the quote box */
+}
+
+.quote-box h2 {
+    font-size: 32px; /* Set the font size for the heading */
+    margin-bottom: 40px; /* Add space below the heading */
+    position: relative; /* Position heading relative to its normal position */
+}
+
+.quote-box h2::after {
+    content: ''; /* Create an empty pseudo-element */
+    width: 75px; /* Set the width of the line */
+    height: 3px; /* Set the height of the line */
+    border-radius: 3px; /* Round the corners of the line */
+    background: rgb(23, 124, 229); /* Set the color of the line */
+    position: absolute; /* Position the line absolutely within the heading */
+    bottom: -10px; /* Position the line 10px below the heading */
+    left: 50%; /* Center the line horizontally */
+    transform: translateX(-50%); /* Center the line exactly under the heading */
+}
+
+.quote-box blockquote {
+    font-size: 26px; /* Set the font size for the quote */
+    min-height: 110px; /* Set a minimum height for the blockquote */
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"'; /* Add quotation marks before and after the quote */
+}
+
+.quote-box span {
+    display: block; /* Make the span a block element */
+    margin-top: 10px; /* Add space above the author */
+    float: right; /* Align the author to the right */
+    position: relative; /* Position span relative to its normal position */
+}
+
+.quote-box span::before {
+    content: ''; /* Create an empty pseudo-element */
+    width: 20px; /* Set the width of the line */
+    height: 2px; /* Set the height of the line */
+    background: rgb(23, 124, 229); /* Set the color of the line */
+    position: absolute; /* Position the line absolutely within the span */
+    top: 50%; /* Vertically center the line within the span */
+    left: -30px; /* Position the line 30px to the left of the span */
+}
+
+.quote-box div {
+    width: 100%; /* Set the width of the container for buttons to 100% */
+    margin-top: 50px; /* Add space above the buttons */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.quote-box button {
+    background: rgb(23, 124, 229); /* Set the background color for the button */
+    color: white; /* Set the text color for the button */
+    border-radius: 25px; /* Round the corners of the button */
+    border: 1px solid rgb(23, 124, 229); /* Add a border matching the background color */
+    width: 150px; /* Set the width of the button */
+    height: 50px; /* Set the height of the button */
+    display: flex; /* Use flexbox for button layout */
+    align-items: center; /* Center items vertically within the button */
+    justify-content: center; /* Center items horizontally within the button */
+    margin: 5px; /* Add space around the button */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.quote-box button img {
+    width: 20px; /* Set the width of the image inside the button */
+    margin-right: 10px; /* Add space to the right of the image */
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent; /* Make the background of the second button transparent */
+    color: #333; /* Set the text color for the second button */
+}

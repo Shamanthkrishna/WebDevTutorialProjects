@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset and viewport settings for proper text rendering and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web page displayed in the browser tab -->
+    <title>Quote of the Day</title>
+    
+    <!-- Link to an external CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the quote and related actions -->
+    <div class="quote-box">
+        <!-- Heading for the quote section -->
+        <h2>Quote of the Day</h2>
+        
+        <!-- Blockquote element for displaying the quote -->
+        <blockquote id="quote">Loading...</blockquote>
+        
+        <!-- Span element for displaying the author of the quote -->
+        <span id="author">Loading...</span>
+        
+        <!-- Container for the buttons to fetch a new quote or tweet the current quote -->
+        <div>
+            <!-- Button to fetch a new quote; triggers the getQuote function from script.js -->
+            <button onclick="getQuote(api_url);">New Quote</button>
+            
+            <!-- Button to tweet the current quote; triggers the tweet function from script.js -->
+            <button onclick="tweet()">
+                <!-- Image for the tweet button (assuming twitter.png is a Twitter icon) -->
+                <img src="twitter.png" alt="Tweet">
+                Tweet
+            </button>
+        </div>
+    </div>
+    
+    <!-- Link to an external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
