@@ -42,7 +42,7 @@ A big thank you to the following sources and tutorials that have been instrument
 - W3 Schools-CSS: [Basics of CSS](https://www.w3schools.com/css/default.asp).
 - W3 Schools-Javascript: [Basics of Javascript](https://www.w3schools.com/js/default.asp).
 - This project was learned and coded with the help of [this YouTube playlist](https://youtube.com/playlist?list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9&si=lyJFIZgcxMrdSgBE).
-- Some parts of the projects was built with the help of ChatGPT.
+- Some parts of the projects like documentation and commenting was built with the help of ChatGPT.
 - ...
 
 
