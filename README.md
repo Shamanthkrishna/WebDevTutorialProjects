@@ -27,6 +27,10 @@ Welcome to the Web Development Practice Projects repository! This collection fea
   
 8. **QR Code Generator**
    - A simple web application that generates QR codes based on user input. Users can enter text or a URL to create a corresponding QR code, which is then displayed on the page.
+  
+9. **Toast Notification System**
+    - This project implements a toast notification or also caled as Snack Bar system using HTML, CSS, and JavaScript. It provides visual feedback for different types of messages (success, error, invalid) through animated toast messages that appear in the bottom-right corner of the screen.
+
      
 ...
 
