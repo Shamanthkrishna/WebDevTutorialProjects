@@ -1,0 +1,103 @@
+/* Apply global styles to all elements */
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    font-family: "Playfair Display", serif; /* Set the default font to Playfair Display */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    background: #f7edff; /* Light background color for the body */
+}
+
+.buttons {
+    margin: 50px; /* Add margin around the buttons container */
+}
+
+.buttons button {
+    background: #333; /* Dark background color for buttons */
+    color: #fff; /* White text color */
+    border: 0; /* Remove border from buttons */
+    outline: 0; /* Remove outline from buttons */
+    width: 120px; /* Set fixed width for buttons */
+    height: 40px; /* Set fixed height for buttons */
+    margin: 5px; /* Add margin around buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#toastBox {
+    position: absolute; /* Position toast container absolutely within the parent */
+    bottom: 30px; /* Position 30px from the bottom */
+    right: 30px; /* Position 30px from the right */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-end; /* Align items to the end (bottom) */
+    flex-direction: column; /* Stack items in a column */
+    overflow: hidden; /* Hide overflow content */
+    padding: 20px; /* Add padding inside the container */
+}
+
+.toast {
+    width: 400px; /* Set fixed width for toast messages */
+    height: 80px; /* Set fixed height for toast messages */
+    background: white; /* White background color for toast messages */
+    font-weight: 500; /* Set font weight to medium */
+    margin: 15px 0; /* Add vertical margin between toast messages */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Position relative for ::after pseudo-element */
+    transform: translateX(100%); /* Start toast off-screen to the right */
+    animation: moveleft 0.5s linear forwards; /* Animate toast sliding in from the right */
+}
+
+/* Keyframes for moving toast from right to left */
+@keyframes moveleft {
+    100% {
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+.toast i {
+    margin: 0 20px; /* Add horizontal margin around icons */
+    font-size: 35px; /* Set icon size */
+    color: green; /* Default icon color */
+}
+
+/* Override icon color for error toast */
+.toast.error i {
+    color: red;
+}
+
+/* Override icon color for invalid toast */
+.toast.invalid i {
+    color: orange;
+}
+
+/* Add a colored progress bar at the bottom of toast */
+.toast::after {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Position absolutely within the toast */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width of the toast */
+    height: 5px; /* Set height of the progress bar */
+    background: green; /* Default background color of progress bar */
+    animation: anim 5s linear forwards; /* Animate progress bar shrinking */
+}
+
+/* Keyframes for animating the progress bar */
+@keyframes anim {
+    100% {
+        width: 0; /* End with zero width */
+    }
+}
+
+/* Override progress bar color for error toast */
+.toast.error::after {
+    background: red;
+}
+
+/* Override progress bar color for invalid toast */
+.toast.invalid::after {
+    background: orange;
+}

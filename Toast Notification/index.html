@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Bar</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a33c36b6ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Container for buttons that trigger toast messages -->
+    <div class="buttons">
+        <!-- Buttons to trigger different types of toast messages -->
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Errors</button>
+        <button onclick="showToast(invalidMsg)">Invalid</button>
+    </div>
+
+    <!-- Container where toast messages will be displayed -->
+    <div id="toastBox">
+        <!-- Toast messages will be appended here -->
+    </div>
+</body>
+<script>
+    // Get the reference to the toast container
+    let toastBox = document.getElementById("toastBox");
+
+    // Define different types of toast messages with associated icons
+    let successMsg = '<i class="fa-solid fa-circle-check"></i>Successfully Submitted';
+    let errorMsg = '<i class="fa-solid fa-circle-xmark"></i>Please Fix the error';
+    let invalidMsg = '<i class="fa-solid fa-circle-exclamation"></i>Invalid Input, Check Again';
+
+    // Function to show a toast message
+    function showToast(msg){
+        // Create a new div element for the toast message
+        let toast = document.createElement('div');
+        toast.classList.add('toast'); // Add 'toast' class for styling
+        toast.innerHTML = msg; // Set the inner HTML of the toast to the message
+        
+        // Append the toast message to the toast container
+        toastBox.appendChild(toast);
+        
+        // Add specific classes based on the content of the message
+        if (msg.includes('error')){
+            toast.classList.add('error'); // Add 'error' class for red icon and styling
+        }
+        if (msg.includes('Invalid')){
+            toast.classList.add('invalid'); // Add 'invalid' class for orange icon and styling
+        }
+
+        // Automatically remove the toast message after 6 seconds
+        setTimeout(()=>{
+            toast.remove();
+        }, 6000);
+    }
+</script>
+</html>
