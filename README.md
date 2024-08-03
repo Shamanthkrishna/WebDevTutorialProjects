@@ -31,6 +31,9 @@ Welcome to the Web Development Practice Projects repository! This collection fea
 9. **Toast Notification System**
     - This project implements a toast notification or also caled as Snack Bar system using HTML, CSS, and JavaScript. It provides visual feedback for different types of messages (success, error, invalid) through animated toast messages that appear in the bottom-right corner of the screen.
 
+10. **Music Player**
+    - A simple music player built with HTML, CSS, and JavaScript. It allows users to play and pause a song, and control the playback position using a progress bar.
+
      
 ...
 
