@@ -1,0 +1,117 @@
+/* Apply default styles to all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: "Poppins", sans-serif; /* Set the font family for text */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Styles for the container that holds the music player */
+.container {
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background: #333; /* Dark gray background color */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+}
+
+/* Styles for the music player box */
+.music-player {
+    background: #ffe0e5; /* Light pink background color */
+    width: 400px; /* Set a fixed width for the music player */
+    padding: 25px 35px; /* Add padding inside the music player */
+    text-align: center; /* Center text inside the music player */
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items evenly with space between them */
+    margin-bottom: 30px; /* Add space below the navigation bar */
+}
+
+/* Styles for circular elements in the navigation bar */
+nav .circle {
+    border-radius: 50%; /* Make the element circular */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    line-height: 40px; /* Vertically center text */
+    background: white; /* White background color */
+    color: #f53192; /* Pink color for text/icons */
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22); /* Add shadow effect */
+}
+
+/* Styles for the song image */
+.song-img {
+    width: 220px; /* Set width of the image */
+    border-radius: 50%; /* Make the image circular */
+    border: 8px solid white; /* Add a white border around the image */
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22); /* Add shadow effect */
+}
+
+/* Styles for the song title */
+.music-player h1 {
+    font-size: 20px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+    color: #333; /* Dark gray color for text */
+    margin-top: 20px; /* Add space above the title */
+}
+
+/* Styles for the song artist name */
+.music-player p {
+    font-size: 14px; /* Set font size */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Styles for the progress bar */
+#progress {
+    -webkit-appearance: none; /* Remove default appearance in WebKit browsers */
+    width: 100%; /* Full width of the container */
+    height: 6px; /* Set height */
+    background: #f53192; /* Pink background color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin: 40px 0; /* Add vertical space around the progress bar */
+}
+
+/* Styles for the slider thumb (handle) in WebKit browsers */
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default appearance in WebKit browsers */
+    background: #f53192; /* Pink background color for the thumb */
+    width: 30px; /* Set width of the thumb */
+    height: 30px; /* Set height of the thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    border: 8px solid white; /* Add a white border around the thumb */
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22); /* Add shadow effect */
+}
+
+/* Styles for the control buttons */
+.controls {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center controls horizontally */
+    align-items: center; /* Center controls vertically */
+}
+
+/* Styles for individual control buttons */
+.controls div {
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    margin: 20px; /* Add space around each button */
+    background: white; /* White background color */
+    display: inline-flex; /* Align items inline with flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    border-radius: 50%; /* Make the button circular */
+    color: #f53192; /* Pink color for icons */
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22); /* Add shadow effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for the central control button (play/pause) */
+.controls div:nth-child(2) {
+    transform: scale(1.5); /* Increase size of the central button */
+    background: #f53192; /* Pink background color for the central button */
+    color: white; /* White color for the icon */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set the viewport to ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page displayed in the browser tab -->
+    <title>Music Player</title>
+    <!-- Link to the external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a33c36b6ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Container to center the music player in the viewport -->
+    <div class="container">
+        <!-- Main music player element -->
+        <div class="music-player">
+            <!-- Navigation bar with circular buttons for controls -->
+            <nav>
+                <!-- Button for navigating backward (left arrow icon) -->
+                <div class="circle">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+                <!-- Button for opening a menu or additional options (bars icon) -->
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <!-- Album art or song image -->
+            <img src="media/images.jpg" class="song-img">
+            <!-- Song title -->
+            <h1>Minchaagi Neenu Baralu</h1>
+            <!-- Song artist -->
+            <p>Sonu Nigam</p>
+
+            <!-- Audio element to play the song -->
+            <audio id="song">
+                <!-- Source of the audio file -->
+                <source src="media/[iSongs.info] 04 - Minchagi Neenu.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- Range input to act as a progress bar -->
+            <input type="range" value="0" id="progress">
+
+            <!-- Controls for playback -->
+            <div class="controls">
+                <!-- Button for going backward (icon inside) -->
+                <div><i class="fa-solid fa-backward"></i></div>
+                <!-- Button for play/pause functionality with an onclick event -->
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <!-- Button for going forward (icon inside) -->
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
